@@ -5,7 +5,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
           Platos de la Costa Caribe Sur
         </h1>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
           La gastronomía de la Costa Caribe Sur de Nicaragua es rica en sabores
           del mar y productos locales. Esta región es conocida por su diversidad
           cultural y su cocina refleja una mezcla de influencias indígenas,
@@ -16,7 +16,7 @@ export default function Home() {
           cuenta una historia y ofrece una experiencia única de los sabores del
           Caribe Sur.
         </p>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
           Los mariscos frescos son una delicia que no te puedes perder,
           preparados con ingredientes locales y técnicas tradicionales que
           resaltan su sabor natural. Los caracoles, por otro lado, son un manjar
@@ -24,7 +24,7 @@ export default function Home() {
           guisos. Los cangrejos, con su carne jugosa y dulce, son otro plato
           emblemático de la región.
         </p>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+        <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
           El Rondón es quizás el plato más representativo de la Costa Caribe
           Sur. Este guiso combina pescado, mariscos, leche de coco, y una
           variedad de tubérculos como yuca y plátano, creando un plato rico y
@@ -33,26 +33,7 @@ export default function Home() {
           cualquier comida, mientras que el patí, con su relleno especiado, es
           una muestra de la influencia africana en la cocina local.
         </p>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-          Califica los platos
-        </h2>
-        <p className="text-lg text-gray-700 mb-4">
-          Si ya has probado estos platos, ¡danos tu calificación!
-        </p>
-        <select
-          id="calificacion"
-          className="block w-full p-2 border border-gray-300 rounded mb-4"
-        >
-          <option value="1">⭐</option>
-          <option value="2">⭐⭐</option>
-          <option value="3">⭐⭐⭐</option>
-          <option value="4">⭐⭐⭐⭐</option>
-          <option value="5">⭐⭐⭐⭐⭐</option>
-        </select>
-        <button className="w-full bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600">
-          Enviar
-        </button>
-        <p id="resultado" className="text-lg text-gray-700 mt-4"></p>
+        {/* Removed rating section */}
       </div>
     </>
   );
