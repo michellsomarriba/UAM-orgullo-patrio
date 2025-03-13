@@ -14,9 +14,11 @@ import Specialties from "./pages/Specialties";
 
 import "./index.css";
 
+const basename = import.meta.env.BASENAME || "/";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
