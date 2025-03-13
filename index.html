@@ -1,36 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Platos de la Costa Caribe Sur</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula el CSS externo -->
-</head>
-<body>
-    <div class="container">
-        <h1>Platos de la Costa Caribe Sur</h1>
-        <p>La gastronomía de la Costa Caribe Sur de Nicaragua es rica en sabores del mar y productos locales.</p>
-
-        <a href="mariscos.html" class="plato">Mariscos</a>
-        <a href="caracoles.html" class="plato">Caracoles</a>
-        <a href="cangrejos.html" class="plato">Cangrejos</a>
-        <a href="rondon.html" class="plato">Rondón</a>
-        <a href="pan_coco.html" class="plato">Pan de Coco</a>
-        <a href="pati.html" class="plato">Patí</a>
-
-        <h2>Califica los platos</h2>
-        <p>Si ya has probado estos platos, ¡danos tu calificación!</p>
-        <select id="calificacion">
-            <option value="1">⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-        </select>
-        <button onclick="mostrarCalificacion()">Enviar</button>
-        <p id="resultado"></p>
-    </div>
-
-    <script src="script.js"></script> <!-- Vincula el archivo JavaScript externo -->
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
