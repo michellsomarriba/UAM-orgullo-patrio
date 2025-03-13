@@ -15,8 +15,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  env:
-    BASENAME: ${{ github.event.repository.name }}
+  environment:
+    basename: ${{ github.event.repository.name }}
   # Build job
   build:
     # Specify runner +  build & upload the static files as an artifact
@@ -41,7 +41,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build --base=/${{ env.BASENAME }}
+        run: pnpm build --base=/${{ env.basename }}
 
       #   - name: Build static files
       #     id: build
