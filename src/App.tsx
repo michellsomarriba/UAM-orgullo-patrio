@@ -27,7 +27,7 @@ function App() {
         <Outlet />
       </main>
       <footer>
-        <p>&copy; 2025 My Website</p>
+        <p>&copy; 2025 Costa Caribe Sur</p>
       </footer>
     </div>
     // <main className="min-h-screen">
