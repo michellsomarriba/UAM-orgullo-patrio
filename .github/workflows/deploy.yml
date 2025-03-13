@@ -39,7 +39,7 @@ jobs:
         run: pnpm install
 
       - name: Set Environment Variables
-        run: echo "VITE_BASENAME=/${{ github.event.repository.name }}" >> $GITHUB_ENV
+        run: echo "BASENAME=/${{ github.event.repository.name }}" >> $GITHUB_ENV
 
       - name: Build
         run: pnpm build --base=/${{ github.event.repository.name }}
