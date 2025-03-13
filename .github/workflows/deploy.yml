@@ -39,7 +39,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build -- --base-url ${{ github.event.repository.name }}
+        run: pnpm build --base=/${{ github.event.repository.name }}
 
       #   - name: Build static files
       #     id: build
