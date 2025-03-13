@@ -16,6 +16,8 @@ import "./index.css";
 
 const basename = import.meta.env.BASENAME || "/";
 
+console.log("Using basename:", basename);
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Router basename={basename}>
