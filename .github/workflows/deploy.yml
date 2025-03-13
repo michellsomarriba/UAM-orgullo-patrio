@@ -20,7 +20,7 @@ jobs:
     # Specify runner +  build & upload the static files as an artifact
     runs-on: ubuntu-latest
     env:
-      BASENAME: ${{ github.event.repository.name }}
+      VITE_BASENAME: ${{ github.event.repository.name }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
         run: pnpm install
 
       - name: Set Environment Variables
-        run: echo "BASENAME=/${{ github.event.repository.name }}" >> $GITHUB_ENV
+        run: echo "VITE_BASENAME=/${{ github.event.repository.name }}" >> $GITHUB_ENV
 
       - name: Build
         run: pnpm build --base=/${{ github.event.repository.name }}

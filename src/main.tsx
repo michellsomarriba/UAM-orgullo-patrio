@@ -14,7 +14,7 @@ import Specialties from "./pages/Specialties";
 
 import "./index.css";
 
-const basename = import.meta.env.BASENAME || "/";
+const basename = import.meta.env.VITE_BASENAME || "/";
 
 console.log("Using basename:", basename);
 
