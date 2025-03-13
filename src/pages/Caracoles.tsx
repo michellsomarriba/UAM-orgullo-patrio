@@ -5,7 +5,7 @@ export default function Caracoles() {
     <div className="container mx-auto p-6 font-sans">
       <h1 className="text-4xl font-bold text-yellow-400 mb-4">Caracoles</h1>
       <img
-        src="/images/caracoles.webp"
+        src={`${import.meta.env.BASE_URL}images/caracoles.webp`}
         alt="Caracoles"
         className="w-1/2 h-auto mb-4 rounded-lg shadow-lg mx-auto"
       />

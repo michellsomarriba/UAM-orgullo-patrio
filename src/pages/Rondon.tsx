@@ -5,7 +5,7 @@ export default function Rondon() {
     <div className="container mx-auto p-6 font-sans">
       <h1 className="text-4xl font-bold text-yellow-400 mb-4">Rondon</h1>
       <img
-        src="/images/rondon.jpg"
+        src={`${import.meta.env.BASE_URL}images/rondon.jpg`}
         alt="Rondon"
         className="w-1/2 h-auto mb-4 rounded-lg shadow-lg mx-auto"
       />

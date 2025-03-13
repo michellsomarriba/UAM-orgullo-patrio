@@ -5,7 +5,7 @@ function Mariscos() {
     <div className="container mx-auto p-6 font-sans">
       <h1 className="text-4xl font-bold text-yellow-400 mb-4">Mariscos</h1>
       <img
-        src="/images/mariscos.webp"
+        src={`${import.meta.env.BASE_URL}images/mariscos.webp`}
         alt="Mariscos"
         className="w-1/2 h-auto mb-4 rounded-lg shadow-lg mx-auto"
       />

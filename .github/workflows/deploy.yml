@@ -40,18 +40,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Set Environment Variables
-        run: echo "VITE_BASENAME=/${{ github.event.repository.name }}" >> $GITHUB_ENV
-
       - name: Build
         run: pnpm build --base=/${{ github.event.repository.name }}
-
-      #   - name: Build static files
-      #     id: build
-      #     run: |
-      #       # <Not provided for brevity>
-      #       # At a minimum this step should build the static files of your site
-      #       # <Not provided for brevity>
 
       - name: Upload static files as artifact
         id: deployment
