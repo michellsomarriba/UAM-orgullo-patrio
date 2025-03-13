@@ -5,7 +5,7 @@ export default function Pati() {
     <div className="container mx-auto p-6 font-sans">
       <h1 className="text-4xl font-bold text-yellow-400 mb-4">Pati</h1>
       <img
-        src={`${import.meta.env.BASE_URL}images/pati.jpg`}
+        src="images/pati.jpg"
         alt="Pati"
         className="w-1/2 h-auto mb-4 rounded-lg shadow-lg mx-auto"
       />
