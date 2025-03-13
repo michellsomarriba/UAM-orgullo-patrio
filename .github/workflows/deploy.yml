@@ -15,10 +15,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  environment:
-    basename: ${{ github.event.repository.name }}
   # Build job
   build:
+    environment:
+      basename: ${{ github.event.repository.name }}
+
     # Specify runner +  build & upload the static files as an artifact
     runs-on: ubuntu-latest
     steps:
