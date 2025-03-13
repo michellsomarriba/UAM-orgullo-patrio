@@ -39,9 +39,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: |
-          pnpm build
-          ls
+        run: pnpm build
 
       #   - name: Build static files
       #     id: build
@@ -54,7 +52,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: ./out
+          path: ./dist
 
   # Deploy job
   deploy:
